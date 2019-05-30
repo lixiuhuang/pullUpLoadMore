@@ -13,14 +13,6 @@ export default {
     return {
       dataList:[],
       pullUpState:1,
-      // 上拉加载的设置
-      infiniteLoadData: {
-        initialShowNum: 10, // 初始显示多少条
-        everyLoadingNum: 10, // 每次加载的个数
-        pullUpState: 1, // 子组件的pullUpState状态
-        pullUpList: [], // 上拉加载更多数据的数组
-        showPullUpListLength: this.initialShowNum // 上拉加载后所展示的个数
-      },
       dataList:[],
       page:1
     }
@@ -32,7 +24,7 @@ export default {
       this.getData()
     },
     onInfiniteLoad (done) {
-      if (this.infiniteLoadData.pullUpState === 1) {
+      if (this.pullUpState === 1) {
         this.getPullUpMoreData()
       }
       done()
