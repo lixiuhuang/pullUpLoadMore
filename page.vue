@@ -41,14 +41,6 @@ export default {
   }
 }
 </script>
-<style lang="scss" scoped>
-.cont{
-  padding:15px 20px;
-  li{
-    line-height: 30px;
-    margin-bottom: 15px;
-  }
-}
-</style>
+
 
 
